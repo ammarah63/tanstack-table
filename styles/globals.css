@@ -1,8 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+  font-family: "Lato";
+  overflow-x: hidden;
+  overflow-x: clip !important;
+}
+@media screen and (max-width: 1920px) {
+  #react-select-5-input {
+    font-size: larger !important;
+  }
+  .css-qbdosj-Input{
+    font-size: 20px !important;
+  }
+}
+::-webkit-scrollbar {
+  height: 4px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: silver;
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +57,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
